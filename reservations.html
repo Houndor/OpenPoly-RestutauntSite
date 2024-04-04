@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Haukai Resturaunt | About</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Haukai</span> Resturaunt</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="current"><a href="reservations.html">Reservations</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter</h1>
+        <form> <!--does not include any backend process so has no classes or elements-->
+          <input type="email" placeholder="Please Enter your email">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="email" name="emailaddress" placeholder="Your email address">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="phone">Phone Number</label>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="phone" name="phonenumber" placeholder="Your phone number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="reserve">Number of People</label>
+          </div>
+          <div class="col-75">
+            <select id="reserve" name="reservenumber" placeholder="The number of People Who Will be Attending">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine</option>
+              <option value="10">Ten</option>
+              <option value="11+">Eleven or more</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="date">Date of Reservation</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="date" name="reservedate" min="2021-01-01" max="2021-12-31" placeholder="The date you would like to book" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="time">Time of Reservation</label>
+            </div>
+            <div class="col-75">
+              <input type="time" id="time" name="reservetime" min="17:00" max="22:00" placeholder="The time you would like to book" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="date">Any Notes for Staff</label>
+            </div>
+            <div class="col-75">
+              <textarea type="text" placeholder="Message"></textarea>
+            </div>
+          </div>
+              <button type="submit" class="button_1">Submit</button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer>
+    <li><a href="terms.html">Terms of Use</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <p>Haukai Resturaunt Copyright &copy;2021</p>
+  </footer>
+</html>
